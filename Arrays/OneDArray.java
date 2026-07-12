@@ -12,7 +12,8 @@ public class OneDArray {
 
 
         }
-//        System.out.print(Arrays.toString(arr));
+
+    // System.out.print(Arrays.toString(arr));
 
     }
 
@@ -25,7 +26,8 @@ public class OneDArray {
             }
         } catch (Exception e) {
 
-            System.out.print("Array index out of bound");
+            // System.out.print("Array index out of bound");
+            e.printStackTrace();
         }
     }
 
