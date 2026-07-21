@@ -16,8 +16,8 @@ public class TwoDArray {
 
     public void insert(int row, int col, int valueToInsert){
         try{
-            if(a[i][j] == Integer.MAX_VALUE){
-                a[i][j] = valueToInsert;
+            if(a[row][col] == Integer.MAX_VALUE){
+                a[row][col] = valueToInsert;
                 System.out.println("value added successfully");
             }
         }catch(Exception e){
@@ -74,7 +74,7 @@ public void update (int row,int col, int valueToUpdate){
 
 public void deletion(int row,int col){
     try{
-        a[i][j] = Integer.MAX_VALUE;
+        a[row][col] = Integer.MAX_VALUE;
         System.out.println("value is deleted");
         traversal();
     }catch(Exception e){
@@ -89,7 +89,7 @@ public static void main(String[] args) {
     System.out.println("enter the size of col:");
     int col = sc.nextInt();
 
-    TwoDArray t = new TwoDArray(row,col);
+    TwoDArray t = new TwoDArray();
 
     for(int i=0; i<row; i++){
        for(int j=0; j<col; j++){
@@ -113,7 +113,7 @@ public static void main(String[] args) {
     System.out.println("enter row:");
     int rowInd = sc.nextInt();
     System.out.println("enter col:");
-    inr colInd = sc.nextInt();
+    int colInd = sc.nextInt();
 
     t.fetch(rowInd, colInd);
 
