@@ -2,19 +2,10 @@ package dsapractice.Strings;
 
 public class ReverseString {
     public static void main(String[] args){
-        String str = "Hello";
-        char[] ch = str.toCharArray();
-        int start = 0;
-        int end = str.length()-1;
+        String str ="JAVA";
 
-        while(start<end){
-            char temp = ch[start];
-            ch[start] = ch[end];
-            ch[end] = temp;
-
-            start++;
-            end--;
+        for(int i=str.length()-1 ; i>=0 ; i--){
+            System.out.print(str.charAt(i));
         }
-        System.out.println(ch);
     }
 }
